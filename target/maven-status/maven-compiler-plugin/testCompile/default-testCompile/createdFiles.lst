@@ -1,0 +1,8 @@
+com\restfulbooker\tests\bookingids\GetBookingIdsTest.class
+com\restfulbooker\listeners\ExtentReportListener.class
+com\restfulbooker\models\AuthRequest.class
+com\restfulbooker\reports\ExtentReportManager.class
+com\restfulbooker\base\ApiConfig.class
+com\restfulbooker\tests\ping\PingTest.class
+com\restfulbooker\tests\auth\AuthTest.class
+com\restfulbooker\base\BaseApiTest.class

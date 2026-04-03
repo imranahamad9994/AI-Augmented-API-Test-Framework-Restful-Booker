@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RestfulBookerApiSuite" verbose="1">
+    <listeners>
+        <listener class-name="com.restfulbooker.listeners.ExtentReportListener"/>
+    </listeners>
+    <test name="Ping Module Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.ping.PingTest"/>
+        </classes>
+    </test>
+    <test name="Auth Module Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.auth.AuthTest"/>
+        </classes>
+    </test>
+    <test name="Get Booking IDs Module Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.bookingids.GetBookingIdsTest"/>
+        </classes>
+    </test>
+</suite>
