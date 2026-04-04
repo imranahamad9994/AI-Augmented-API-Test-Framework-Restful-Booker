@@ -18,4 +18,14 @@
             <class name="com.restfulbooker.tests.bookingids.GetBookingIdsTest"/>
         </classes>
     </test>
+    <test name="Get Booking Module Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.booking.GetBookingTest"/>
+        </classes>
+    </test>
+    <test name="Create Booking Module Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.createbooking.CreateBookingTest"/>
+        </classes>
+    </test>
 </suite>

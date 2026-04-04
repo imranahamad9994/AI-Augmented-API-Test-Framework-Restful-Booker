@@ -45,6 +45,23 @@ Known bug-focus areas to document during execution:
 - `TC_GBI_005` - Filter by checkout date
 - `TC_GBI_006` - Non-matching firstname returns empty result
 
+### Get Booking
+
+- `TC_GB_001` - Get booking by valid ID
+- `TC_GB_002` - Get booking by non-existent ID
+- `TC_GB_003` - Get booking with ID = 0
+- `TC_GB_004` - Get booking with string as ID
+
+### Create Booking
+
+- `TC_CB_001` - Create booking with all valid fields
+- `TC_CB_002` - Create booking with missing firstname
+- `TC_CB_003` - Create booking with missing totalprice
+- `TC_CB_004` - Create booking with missing depositpaid
+- `TC_CB_005` - Create booking with missing bookingdates
+- `TC_CB_006` - Create booking with invalid date format
+- `TC_CB_007` - Verify create booking response schema
+
 ## Framework Structure
 
 ```text
@@ -61,8 +78,12 @@ src/test/java/com/restfulbooker
 `-- tests
     |-- auth
     |   `-- AuthTest.java
+    |-- booking
+    |   `-- GetBookingTest.java
     |-- bookingids
     |   `-- GetBookingIdsTest.java
+    |-- createbooking
+    |   `-- CreateBookingTest.java
     `-- ping
         `-- PingTest.java
 ```
@@ -99,6 +120,18 @@ Run get booking IDs tests only:
 mvn "-Dtest=com.restfulbooker.tests.bookingids.GetBookingIdsTest" test
 ```
 
+Run get booking tests only:
+
+```powershell
+mvn "-Dtest=com.restfulbooker.tests.booking.GetBookingTest" test
+```
+
+Run create booking tests only:
+
+```powershell
+mvn "-Dtest=com.restfulbooker.tests.createbooking.CreateBookingTest" test
+```
+
 ## Current Execution Notes
 
 - `TC_AUTH_001` is implemented correctly, but in recent runs the response-time assertion has exceeded the expected `< 3000 ms` threshold.
@@ -112,6 +145,11 @@ mvn "-Dtest=com.restfulbooker.tests.bookingids.GetBookingIdsTest" test
 - For `TC_GBI_006`, expected behavior and actual behavior matched in the latest execution:
   - Expected: `200` with empty JSON array `[]`
   - Actual: `200` with empty JSON array `[]`
+- `TC_GB_001` to `TC_GB_004` were executed and passed.
+- `TC_CB_001` to `TC_CB_007` were executed and passed.
+- For `TC_CB_006`, expected behavior and actual behavior matched in the latest execution:
+  - Expected: `200`
+  - Actual: `200`
 
 ## Test Case Source
 
@@ -121,8 +159,6 @@ Test cases are maintained in:
 
 ## Next Scope
 
-- `GET_BOOKING` module
-- `CREATE_BOOKING` module
 - `UPDATE_BOOKING` module
 - `PATCH_BOOKING` module
 - `DELETE_BOOKING` module
