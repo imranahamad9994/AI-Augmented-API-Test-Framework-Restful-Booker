@@ -28,4 +28,19 @@
             <class name="com.restfulbooker.tests.createbooking.CreateBookingTest"/>
         </classes>
     </test>
+    <test name="Update Booking Module Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.updatebooking.UpdateBookingTest"/>
+        </classes>
+    </test>
+    <test name="Patch Booking Module Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.patchbooking.PatchBookingTest"/>
+        </classes>
+    </test>
+    <test name="Delete Booking Module Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.deletebooking.DeleteBookingTest"/>
+        </classes>
+    </test>
 </suite>

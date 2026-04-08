@@ -7,4 +7,7 @@ C:\Users\Hp\OneDrive\Documents\Automation AI Practice Project\src\test\java\com\
 C:\Users\Hp\OneDrive\Documents\Automation AI Practice Project\src\test\java\com\restfulbooker\tests\booking\GetBookingTest.java
 C:\Users\Hp\OneDrive\Documents\Automation AI Practice Project\src\test\java\com\restfulbooker\tests\bookingids\GetBookingIdsTest.java
 C:\Users\Hp\OneDrive\Documents\Automation AI Practice Project\src\test\java\com\restfulbooker\tests\createbooking\CreateBookingTest.java
+C:\Users\Hp\OneDrive\Documents\Automation AI Practice Project\src\test\java\com\restfulbooker\tests\deletebooking\DeleteBookingTest.java
+C:\Users\Hp\OneDrive\Documents\Automation AI Practice Project\src\test\java\com\restfulbooker\tests\patchbooking\PatchBookingTest.java
 C:\Users\Hp\OneDrive\Documents\Automation AI Practice Project\src\test\java\com\restfulbooker\tests\ping\PingTest.java
+C:\Users\Hp\OneDrive\Documents\Automation AI Practice Project\src\test\java\com\restfulbooker\tests\updatebooking\UpdateBookingTest.java

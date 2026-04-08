@@ -1,45 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="37" passed="37" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-04T09:29:46 IST" name="Surefire suite" finished-at="2026-04-04T09:30:02 IST" duration-ms="16096">
+  <suite started-at="2026-04-08T19:32:42 IST" name="RestfulBookerApiSuite" finished-at="2026-04-08T19:34:47 IST" duration-ms="124972">
     <groups>
     </groups>
-    <test started-at="2026-04-04T09:29:46 IST" name="Surefire test" finished-at="2026-04-04T09:30:02 IST" duration-ms="16096">
-      <class name="com.restfulbooker.tests.createbooking.CreateBookingTest">
-        <test-method is-config="true" signature="setUpRequestSpecification()[pri:0, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@5e316c74]" started-at="2026-04-04T09:29:46 IST" name="setUpRequestSpecification" finished-at="2026-04-04T09:29:46 IST" duration-ms="692" status="PASS">
+    <test started-at="2026-04-08T19:32:42 IST" name="Ping Module Tests" finished-at="2026-04-08T19:32:46 IST" duration-ms="3564">
+      <class name="com.restfulbooker.tests.ping.PingTest">
+        <test-method is-config="true" signature="setUpRequestSpecification()[pri:0, instance:com.restfulbooker.tests.ping.PingTest@393671df]" started-at="2026-04-08T19:32:42 IST" name="setUpRequestSpecification" finished-at="2026-04-08T19:32:43 IST" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpRequestSpecification -->
-        <test-method signature="verifyCreateBookingWithAllValidFields()[pri:1, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@5e316c74]" started-at="2026-04-04T09:29:46 IST" name="verifyCreateBookingWithAllValidFields" description="TC_CB_001 - Verify booking is created with all valid fields" finished-at="2026-04-04T09:29:52 IST" duration-ms="5183" status="PASS">
+        <test-method signature="verifyServerIsUpUsingPingEndpoint()[pri:1, instance:com.restfulbooker.tests.ping.PingTest@393671df]" started-at="2026-04-08T19:32:43 IST" name="verifyServerIsUpUsingPingEndpoint" description="TC_PING_001 - Verify server is reachable through ping endpoint" finished-at="2026-04-08T19:32:46 IST" duration-ms="3033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServerIsUpUsingPingEndpoint -->
+      </class> <!-- com.restfulbooker.tests.ping.PingTest -->
+    </test> <!-- Ping Module Tests -->
+    <test started-at="2026-04-08T19:32:46 IST" name="Auth Module Tests" finished-at="2026-04-08T19:32:56 IST" duration-ms="9672">
+      <class name="com.restfulbooker.tests.auth.AuthTest">
+        <test-method signature="verifyTokenGeneratedWithValidCredentials()[pri:1, instance:com.restfulbooker.tests.auth.AuthTest@52bf72b5]" started-at="2026-04-08T19:32:46 IST" name="verifyTokenGeneratedWithValidCredentials" description="TC_AUTH_001 - Verify auth token is generated for valid credentials" finished-at="2026-04-08T19:32:48 IST" duration-ms="2599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTokenGeneratedWithValidCredentials -->
+        <test-method is-config="true" signature="setUpRequestSpecification()[pri:0, instance:com.restfulbooker.tests.auth.AuthTest@52bf72b5]" started-at="2026-04-08T19:32:46 IST" name="setUpRequestSpecification" finished-at="2026-04-08T19:32:46 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRequestSpecification -->
+        <test-method signature="verifyBadCredentialsForInvalidUsername()[pri:2, instance:com.restfulbooker.tests.auth.AuthTest@52bf72b5]" started-at="2026-04-08T19:32:48 IST" name="verifyBadCredentialsForInvalidUsername" description="TC_AUTH_002 - Verify bad credentials response for invalid username" finished-at="2026-04-08T19:32:50 IST" duration-ms="1823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBadCredentialsForInvalidUsername -->
+        <test-method signature="verifyBadCredentialsForInvalidPassword()[pri:3, instance:com.restfulbooker.tests.auth.AuthTest@52bf72b5]" started-at="2026-04-08T19:32:50 IST" name="verifyBadCredentialsForInvalidPassword" description="TC_AUTH_003 - Verify bad credentials response for invalid password" finished-at="2026-04-08T19:32:52 IST" duration-ms="1716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBadCredentialsForInvalidPassword -->
+        <test-method signature="verifyBadCredentialsForEmptyUsernameAndPassword()[pri:4, instance:com.restfulbooker.tests.auth.AuthTest@52bf72b5]" started-at="2026-04-08T19:32:52 IST" name="verifyBadCredentialsForEmptyUsernameAndPassword" description="TC_AUTH_004 - Verify bad credentials response for empty username and password" finished-at="2026-04-08T19:32:54 IST" duration-ms="1865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBadCredentialsForEmptyUsernameAndPassword -->
+        <test-method signature="verifyErrorResponseForMissingRequestBody()[pri:5, instance:com.restfulbooker.tests.auth.AuthTest@52bf72b5]" started-at="2026-04-08T19:32:54 IST" name="verifyErrorResponseForMissingRequestBody" description="TC_AUTH_005 - Verify error response when request body is missing" finished-at="2026-04-08T19:32:56 IST" duration-ms="1667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorResponseForMissingRequestBody -->
+      </class> <!-- com.restfulbooker.tests.auth.AuthTest -->
+    </test> <!-- Auth Module Tests -->
+    <test started-at="2026-04-08T19:32:56 IST" name="Get Booking IDs Module Tests" finished-at="2026-04-08T19:33:06 IST" duration-ms="10221">
+      <class name="com.restfulbooker.tests.bookingids.GetBookingIdsTest">
+        <test-method is-config="true" signature="setUpRequestSpecification()[pri:0, instance:com.restfulbooker.tests.bookingids.GetBookingIdsTest@6adbc9d]" started-at="2026-04-08T19:32:56 IST" name="setUpRequestSpecification" finished-at="2026-04-08T19:32:56 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRequestSpecification -->
+        <test-method signature="verifyAllBookingIdsWithoutFilters()[pri:1, instance:com.restfulbooker.tests.bookingids.GetBookingIdsTest@6adbc9d]" started-at="2026-04-08T19:32:56 IST" name="verifyAllBookingIdsWithoutFilters" description="TC_GBI_001 - Verify all booking IDs are returned without filters" finished-at="2026-04-08T19:32:57 IST" duration-ms="1680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllBookingIdsWithoutFilters -->
+        <test-method signature="verifyBookingIdsFilteredByFirstname()[pri:2, instance:com.restfulbooker.tests.bookingids.GetBookingIdsTest@6adbc9d]" started-at="2026-04-08T19:32:57 IST" name="verifyBookingIdsFilteredByFirstname" description="TC_GBI_002 - Verify booking IDs are returned for firstname filter" finished-at="2026-04-08T19:32:59 IST" duration-ms="1765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBookingIdsFilteredByFirstname -->
+        <test-method signature="verifyBookingIdsFilteredByLastname()[pri:3, instance:com.restfulbooker.tests.bookingids.GetBookingIdsTest@6adbc9d]" started-at="2026-04-08T19:32:59 IST" name="verifyBookingIdsFilteredByLastname" description="TC_GBI_003 - Verify booking IDs are returned for lastname filter" finished-at="2026-04-08T19:33:01 IST" duration-ms="1660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBookingIdsFilteredByLastname -->
+        <test-method signature="verifyBookingIdsFilteredByCheckinDate()[pri:4, instance:com.restfulbooker.tests.bookingids.GetBookingIdsTest@6adbc9d]" started-at="2026-04-08T19:33:01 IST" name="verifyBookingIdsFilteredByCheckinDate" description="TC_GBI_004 - Verify booking IDs are returned for checkin filter" finished-at="2026-04-08T19:33:02 IST" duration-ms="1680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBookingIdsFilteredByCheckinDate -->
+        <test-method signature="verifyBookingIdsFilteredByCheckoutDate()[pri:5, instance:com.restfulbooker.tests.bookingids.GetBookingIdsTest@6adbc9d]" started-at="2026-04-08T19:33:02 IST" name="verifyBookingIdsFilteredByCheckoutDate" description="TC_GBI_005 - Verify booking IDs are returned for checkout filter" finished-at="2026-04-08T19:33:04 IST" duration-ms="1789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBookingIdsFilteredByCheckoutDate -->
+        <test-method signature="verifyEmptyResultForNonMatchingFirstname()[pri:6, instance:com.restfulbooker.tests.bookingids.GetBookingIdsTest@6adbc9d]" started-at="2026-04-08T19:33:04 IST" name="verifyEmptyResultForNonMatchingFirstname" description="TC_GBI_006 - Verify empty array is returned for non-matching firstname filter" finished-at="2026-04-08T19:33:06 IST" duration-ms="1644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmptyResultForNonMatchingFirstname -->
+      </class> <!-- com.restfulbooker.tests.bookingids.GetBookingIdsTest -->
+    </test> <!-- Get Booking IDs Module Tests -->
+    <test started-at="2026-04-08T19:33:06 IST" name="Get Booking Module Tests" finished-at="2026-04-08T19:33:16 IST" duration-ms="10080">
+      <class name="com.restfulbooker.tests.booking.GetBookingTest">
+        <test-method is-config="true" signature="setUpRequestSpecification()[pri:0, instance:com.restfulbooker.tests.booking.GetBookingTest@1b7cc17c]" started-at="2026-04-08T19:33:06 IST" name="setUpRequestSpecification" finished-at="2026-04-08T19:33:06 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRequestSpecification -->
+        <test-method signature="verifyBookingByValidId()[pri:1, instance:com.restfulbooker.tests.booking.GetBookingTest@1b7cc17c]" started-at="2026-04-08T19:33:06 IST" name="verifyBookingByValidId" description="TC_GB_001 - Verify booking details are returned for a valid booking ID" finished-at="2026-04-08T19:33:11 IST" duration-ms="5108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBookingByValidId -->
+        <test-method signature="verifyNonExistentBookingIdReturnsNotFound()[pri:2, instance:com.restfulbooker.tests.booking.GetBookingTest@1b7cc17c]" started-at="2026-04-08T19:33:11 IST" name="verifyNonExistentBookingIdReturnsNotFound" description="TC_GB_002 - Verify non-existent booking ID returns 404" finished-at="2026-04-08T19:33:12 IST" duration-ms="1627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNonExistentBookingIdReturnsNotFound -->
+        <test-method signature="verifyZeroBookingIdReturnsNotFound()[pri:3, instance:com.restfulbooker.tests.booking.GetBookingTest@1b7cc17c]" started-at="2026-04-08T19:33:12 IST" name="verifyZeroBookingIdReturnsNotFound" description="TC_GB_003 - Verify booking ID 0 returns 404" finished-at="2026-04-08T19:33:14 IST" duration-ms="1607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyZeroBookingIdReturnsNotFound -->
+        <test-method signature="verifyStringBookingIdReturnsNotFound()[pri:4, instance:com.restfulbooker.tests.booking.GetBookingTest@1b7cc17c]" started-at="2026-04-08T19:33:14 IST" name="verifyStringBookingIdReturnsNotFound" description="TC_GB_004 - Verify string booking ID returns 404" finished-at="2026-04-08T19:33:16 IST" duration-ms="1732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStringBookingIdReturnsNotFound -->
+      </class> <!-- com.restfulbooker.tests.booking.GetBookingTest -->
+    </test> <!-- Get Booking Module Tests -->
+    <test started-at="2026-04-08T19:33:16 IST" name="Create Booking Module Tests" finished-at="2026-04-08T19:33:28 IST" duration-ms="11905">
+      <class name="com.restfulbooker.tests.createbooking.CreateBookingTest">
+        <test-method is-config="true" signature="setUpRequestSpecification()[pri:0, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@293a5bf6]" started-at="2026-04-08T19:33:16 IST" name="setUpRequestSpecification" finished-at="2026-04-08T19:33:16 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRequestSpecification -->
+        <test-method signature="verifyCreateBookingWithAllValidFields()[pri:1, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@293a5bf6]" started-at="2026-04-08T19:33:16 IST" name="verifyCreateBookingWithAllValidFields" description="TC_CB_001 - Verify booking is created with all valid fields" finished-at="2026-04-08T19:33:18 IST" duration-ms="1724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateBookingWithAllValidFields -->
-        <test-method signature="verifyCreateBookingMissingFirstname()[pri:2, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@5e316c74]" started-at="2026-04-04T09:29:52 IST" name="verifyCreateBookingMissingFirstname" description="TC_CB_002 - Verify missing firstname returns server error" finished-at="2026-04-04T09:29:53 IST" duration-ms="1609" status="PASS">
+        <test-method signature="verifyCreateBookingMissingFirstname()[pri:2, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@293a5bf6]" started-at="2026-04-08T19:33:18 IST" name="verifyCreateBookingMissingFirstname" description="TC_CB_002 - Verify missing firstname returns server error" finished-at="2026-04-08T19:33:19 IST" duration-ms="1833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateBookingMissingFirstname -->
-        <test-method signature="verifyCreateBookingMissingTotalprice()[pri:3, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@5e316c74]" started-at="2026-04-04T09:29:53 IST" name="verifyCreateBookingMissingTotalprice" description="TC_CB_003 - Verify missing totalprice returns server error" finished-at="2026-04-04T09:29:55 IST" duration-ms="1593" status="PASS">
+        <test-method signature="verifyCreateBookingMissingTotalprice()[pri:3, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@293a5bf6]" started-at="2026-04-08T19:33:19 IST" name="verifyCreateBookingMissingTotalprice" description="TC_CB_003 - Verify missing totalprice returns server error" finished-at="2026-04-08T19:33:21 IST" duration-ms="1711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateBookingMissingTotalprice -->
-        <test-method signature="verifyCreateBookingMissingDepositpaid()[pri:4, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@5e316c74]" started-at="2026-04-04T09:29:55 IST" name="verifyCreateBookingMissingDepositpaid" description="TC_CB_004 - Verify missing depositpaid returns server error" finished-at="2026-04-04T09:29:57 IST" duration-ms="1701" status="PASS">
+        <test-method signature="verifyCreateBookingMissingDepositpaid()[pri:4, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@293a5bf6]" started-at="2026-04-08T19:33:21 IST" name="verifyCreateBookingMissingDepositpaid" description="TC_CB_004 - Verify missing depositpaid returns server error" finished-at="2026-04-08T19:33:23 IST" duration-ms="1652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateBookingMissingDepositpaid -->
-        <test-method signature="verifyCreateBookingMissingBookingdates()[pri:5, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@5e316c74]" started-at="2026-04-04T09:29:57 IST" name="verifyCreateBookingMissingBookingdates" description="TC_CB_005 - Verify missing bookingdates returns server error" finished-at="2026-04-04T09:29:58 IST" duration-ms="1694" status="PASS">
+        <test-method signature="verifyCreateBookingMissingBookingdates()[pri:5, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@293a5bf6]" started-at="2026-04-08T19:33:23 IST" name="verifyCreateBookingMissingBookingdates" description="TC_CB_005 - Verify missing bookingdates returns server error" finished-at="2026-04-08T19:33:24 IST" duration-ms="1633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateBookingMissingBookingdates -->
-        <test-method signature="verifyCreateBookingWithInvalidDateFormat()[pri:6, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@5e316c74]" started-at="2026-04-04T09:29:58 IST" name="verifyCreateBookingWithInvalidDateFormat" description="TC_CB_006 - Verify actual behavior for invalid date format during booking creation" finished-at="2026-04-04T09:30:00 IST" duration-ms="1880" status="PASS">
+        <test-method signature="verifyCreateBookingWithInvalidDateFormat()[pri:6, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@293a5bf6]" started-at="2026-04-08T19:33:24 IST" name="verifyCreateBookingWithInvalidDateFormat" description="TC_CB_006 - Verify actual behavior for invalid date format during booking creation" finished-at="2026-04-08T19:33:26 IST" duration-ms="1677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateBookingWithInvalidDateFormat -->
-        <test-method signature="verifyCreateBookingResponseSchema()[pri:7, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@5e316c74]" started-at="2026-04-04T09:30:00 IST" name="verifyCreateBookingResponseSchema" description="TC_CB_007 - Verify create booking response schema" finished-at="2026-04-04T09:30:02 IST" duration-ms="1683" status="PASS">
+        <test-method signature="verifyCreateBookingResponseSchema()[pri:7, instance:com.restfulbooker.tests.createbooking.CreateBookingTest@293a5bf6]" started-at="2026-04-08T19:33:26 IST" name="verifyCreateBookingResponseSchema" description="TC_CB_007 - Verify create booking response schema" finished-at="2026-04-08T19:33:28 IST" duration-ms="1656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateBookingResponseSchema -->
       </class> <!-- com.restfulbooker.tests.createbooking.CreateBookingTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Create Booking Module Tests -->
+    <test started-at="2026-04-08T19:33:28 IST" name="Update Booking Module Tests" finished-at="2026-04-08T19:33:57 IST" duration-ms="29452">
+      <class name="com.restfulbooker.tests.updatebooking.UpdateBookingTest">
+        <test-method is-config="true" signature="setUpRequestSpecification()[pri:0, instance:com.restfulbooker.tests.updatebooking.UpdateBookingTest@49e53c76]" started-at="2026-04-08T19:33:28 IST" name="setUpRequestSpecification" finished-at="2026-04-08T19:33:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRequestSpecification -->
+        <test-method signature="verifyFullUpdateWithValidAuthToken()[pri:1, instance:com.restfulbooker.tests.updatebooking.UpdateBookingTest@49e53c76]" started-at="2026-04-08T19:33:28 IST" name="verifyFullUpdateWithValidAuthToken" description="TC_UB_001 - Verify full update succeeds with valid auth token" finished-at="2026-04-08T19:33:34 IST" duration-ms="6711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFullUpdateWithValidAuthToken -->
+        <test-method signature="verifyFullUpdateWithoutAuthToken()[pri:2, instance:com.restfulbooker.tests.updatebooking.UpdateBookingTest@49e53c76]" started-at="2026-04-08T19:33:34 IST" name="verifyFullUpdateWithoutAuthToken" description="TC_UB_002 - Verify full update fails without auth token" finished-at="2026-04-08T19:33:41 IST" duration-ms="6614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFullUpdateWithoutAuthToken -->
+        <test-method signature="verifyFullUpdateWithInvalidToken()[pri:3, instance:com.restfulbooker.tests.updatebooking.UpdateBookingTest@49e53c76]" started-at="2026-04-08T19:33:41 IST" name="verifyFullUpdateWithInvalidToken" description="TC_UB_003 - Verify full update fails with invalid token" finished-at="2026-04-08T19:33:49 IST" duration-ms="8000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFullUpdateWithInvalidToken -->
+        <test-method signature="verifyUpdateNonExistentBookingId()[pri:4, instance:com.restfulbooker.tests.updatebooking.UpdateBookingTest@49e53c76]" started-at="2026-04-08T19:33:49 IST" name="verifyUpdateNonExistentBookingId" description="TC_UB_004 - Verify update on non-existent booking ID returns 405" finished-at="2026-04-08T19:33:52 IST" duration-ms="3244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateNonExistentBookingId -->
+        <test-method signature="verifyUpdateWithMissingRequiredFields()[pri:5, instance:com.restfulbooker.tests.updatebooking.UpdateBookingTest@49e53c76]" started-at="2026-04-08T19:33:52 IST" name="verifyUpdateWithMissingRequiredFields" description="TC_UB_005 - Verify update with missing required fields returns 400" finished-at="2026-04-08T19:33:57 IST" duration-ms="4874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateWithMissingRequiredFields -->
+      </class> <!-- com.restfulbooker.tests.updatebooking.UpdateBookingTest -->
+    </test> <!-- Update Booking Module Tests -->
+    <test started-at="2026-04-08T19:33:57 IST" name="Patch Booking Module Tests" finished-at="2026-04-08T19:34:22 IST" duration-ms="24524">
+      <class name="com.restfulbooker.tests.patchbooking.PatchBookingTest">
+        <test-method is-config="true" signature="setUpRequestSpecification()[pri:0, instance:com.restfulbooker.tests.patchbooking.PatchBookingTest@4c371370]" started-at="2026-04-08T19:33:57 IST" name="setUpRequestSpecification" finished-at="2026-04-08T19:33:57 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRequestSpecification -->
+        <test-method signature="verifyPartialUpdateFirstnameOnly()[pri:1, instance:com.restfulbooker.tests.patchbooking.PatchBookingTest@4c371370]" started-at="2026-04-08T19:33:57 IST" name="verifyPartialUpdateFirstnameOnly" description="TC_PU_001 - Verify partial update of firstname only" finished-at="2026-04-08T19:34:06 IST" duration-ms="8416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPartialUpdateFirstnameOnly -->
+        <test-method signature="verifyPartialUpdateTotalpriceOnly()[pri:2, instance:com.restfulbooker.tests.patchbooking.PatchBookingTest@4c371370]" started-at="2026-04-08T19:34:06 IST" name="verifyPartialUpdateTotalpriceOnly" description="TC_PU_002 - Verify partial update of totalprice only" finished-at="2026-04-08T19:34:14 IST" duration-ms="8179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPartialUpdateTotalpriceOnly -->
+        <test-method signature="verifyPartialUpdateWithoutAuthToken()[pri:3, instance:com.restfulbooker.tests.patchbooking.PatchBookingTest@4c371370]" started-at="2026-04-08T19:34:14 IST" name="verifyPartialUpdateWithoutAuthToken" description="TC_PU_003 - Verify partial update fails without auth token" finished-at="2026-04-08T19:34:17 IST" duration-ms="3328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPartialUpdateWithoutAuthToken -->
+        <test-method signature="verifyPartialUpdateNonExistentBookingId()[pri:4, instance:com.restfulbooker.tests.patchbooking.PatchBookingTest@4c371370]" started-at="2026-04-08T19:34:17 IST" name="verifyPartialUpdateNonExistentBookingId" description="TC_PU_004 - Verify partial update on non-existent booking ID returns 405" finished-at="2026-04-08T19:34:22 IST" duration-ms="4596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPartialUpdateNonExistentBookingId -->
+      </class> <!-- com.restfulbooker.tests.patchbooking.PatchBookingTest -->
+    </test> <!-- Patch Booking Module Tests -->
+    <test started-at="2026-04-08T19:34:22 IST" name="Delete Booking Module Tests" finished-at="2026-04-08T19:34:47 IST" duration-ms="25499">
+      <class name="com.restfulbooker.tests.deletebooking.DeleteBookingTest">
+        <test-method is-config="true" signature="setUpRequestSpecification()[pri:0, instance:com.restfulbooker.tests.deletebooking.DeleteBookingTest@34a3d150]" started-at="2026-04-08T19:34:22 IST" name="setUpRequestSpecification" finished-at="2026-04-08T19:34:22 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRequestSpecification -->
+        <test-method signature="verifyDeleteBookingWithValidAuthToken()[pri:1, instance:com.restfulbooker.tests.deletebooking.DeleteBookingTest@34a3d150]" started-at="2026-04-08T19:34:22 IST" name="verifyDeleteBookingWithValidAuthToken" description="TC_DEL_001 - Verify booking is deleted with valid auth token" finished-at="2026-04-08T19:34:28 IST" duration-ms="6724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteBookingWithValidAuthToken -->
+        <test-method signature="verifyDeleteBookingWithoutAuthToken()[pri:2, instance:com.restfulbooker.tests.deletebooking.DeleteBookingTest@34a3d150]" started-at="2026-04-08T19:34:28 IST" name="verifyDeleteBookingWithoutAuthToken" description="TC_DEL_002 - Verify delete fails without auth token" finished-at="2026-04-08T19:34:34 IST" duration-ms="5309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteBookingWithoutAuthToken -->
+        <test-method signature="verifyDeleteBookingWithInvalidAuthToken()[pri:3, instance:com.restfulbooker.tests.deletebooking.DeleteBookingTest@34a3d150]" started-at="2026-04-08T19:34:34 IST" name="verifyDeleteBookingWithInvalidAuthToken" description="TC_DEL_003 - Verify delete fails with invalid auth token" finished-at="2026-04-08T19:34:37 IST" duration-ms="3427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteBookingWithInvalidAuthToken -->
+        <test-method signature="verifyDeleteNonExistentBookingId()[pri:4, instance:com.restfulbooker.tests.deletebooking.DeleteBookingTest@34a3d150]" started-at="2026-04-08T19:34:37 IST" name="verifyDeleteNonExistentBookingId" description="TC_DEL_004 - Verify delete on non-existent booking ID returns 405" finished-at="2026-04-08T19:34:40 IST" duration-ms="3269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteNonExistentBookingId -->
+        <test-method signature="verifyDeletedBookingReturnsNotFoundOnGet()[pri:5, instance:com.restfulbooker.tests.deletebooking.DeleteBookingTest@34a3d150]" started-at="2026-04-08T19:34:40 IST" name="verifyDeletedBookingReturnsNotFoundOnGet" description="TC_DEL_005 - Verify deleted booking returns 404 on GET" finished-at="2026-04-08T19:34:47 IST" duration-ms="6756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeletedBookingReturnsNotFoundOnGet -->
+      </class> <!-- com.restfulbooker.tests.deletebooking.DeleteBookingTest -->
+    </test> <!-- Delete Booking Module Tests -->
+  </suite> <!-- RestfulBookerApiSuite -->
 </testng-results>

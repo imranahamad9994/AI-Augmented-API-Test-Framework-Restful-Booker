@@ -62,6 +62,29 @@ Known bug-focus areas to document during execution:
 - `TC_CB_006` - Create booking with invalid date format
 - `TC_CB_007` - Verify create booking response schema
 
+### Update Booking
+
+- `TC_UB_001` - Full update with valid auth token
+- `TC_UB_002` - Full update without auth token
+- `TC_UB_003` - Full update with invalid token
+- `TC_UB_004` - Update non-existent booking ID
+- `TC_UB_005` - Update with missing required fields
+
+### Patch Booking
+
+- `TC_PU_001` - Partial update firstname only
+- `TC_PU_002` - Partial update totalprice only
+- `TC_PU_003` - Partial update without auth token
+- `TC_PU_004` - Partial update non-existent booking ID
+
+### Delete Booking
+
+- `TC_DEL_001` - Delete booking with valid auth token
+- `TC_DEL_002` - Delete booking without auth token
+- `TC_DEL_003` - Delete booking with invalid auth token
+- `TC_DEL_004` - Delete non-existent booking ID
+- `TC_DEL_005` - Verify deleted booking returns 404
+
 ## Framework Structure
 
 ```text
@@ -84,8 +107,14 @@ src/test/java/com/restfulbooker
     |   `-- GetBookingIdsTest.java
     |-- createbooking
     |   `-- CreateBookingTest.java
+    |-- deletebooking
+    |   `-- DeleteBookingTest.java
     `-- ping
         `-- PingTest.java
+    |-- patchbooking
+    |   `-- PatchBookingTest.java
+    `-- updatebooking
+        `-- UpdateBookingTest.java
 ```
 
 ## Reporting
@@ -132,6 +161,24 @@ Run create booking tests only:
 mvn "-Dtest=com.restfulbooker.tests.createbooking.CreateBookingTest" test
 ```
 
+Run update booking tests only:
+
+```powershell
+mvn "-Dtest=com.restfulbooker.tests.updatebooking.UpdateBookingTest" test
+```
+
+Run patch booking tests only:
+
+```powershell
+mvn "-Dtest=com.restfulbooker.tests.patchbooking.PatchBookingTest" test
+```
+
+Run delete booking tests only:
+
+```powershell
+mvn "-Dtest=com.restfulbooker.tests.deletebooking.DeleteBookingTest" test
+```
+
 ## Current Execution Notes
 
 - `TC_AUTH_001` is implemented correctly, but in recent runs the response-time assertion has exceeded the expected `< 3000 ms` threshold.
@@ -150,6 +197,12 @@ mvn "-Dtest=com.restfulbooker.tests.createbooking.CreateBookingTest" test
 - For `TC_CB_006`, expected behavior and actual behavior matched in the latest execution:
   - Expected: `200`
   - Actual: `200`
+- `TC_UB_001` to `TC_UB_005` were executed and passed.
+- `TC_PU_001` to `TC_PU_004` were executed and passed.
+- `TC_DEL_001` to `TC_DEL_005` were executed and passed.
+- For `TC_DEL_001`, expected behavior and actual behavior matched in the latest execution:
+  - Expected: `201` with body `Created`, then `GET /booking/{id}` -> `404`
+  - Actual: `201` with body `Created`, then `GET /booking/{id}` -> `404`
 
 ## Test Case Source
 
@@ -157,8 +210,6 @@ Test cases are maintained in:
 
 `Restful_Booker_TestCases.xlsx`
 
-## Next Scope
+## Status
 
-- `UPDATE_BOOKING` module
-- `PATCH_BOOKING` module
-- `DELETE_BOOKING` module
+Initial end-to-end framework setup and all planned modules from the provided workbook are now implemented in the automation suite.

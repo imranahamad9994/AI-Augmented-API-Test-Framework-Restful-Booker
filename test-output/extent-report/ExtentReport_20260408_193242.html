@@ -1,0 +1,2615 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Restful Booker Test Execution</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Restful Booker API Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 8, 2026 07:32:42 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">com.restfulbooker.tests.patchbooking.PatchBookingTest</a><a class="dropdown-item" href="#">com.restfulbooker.tests.deletebooking.DeleteBookingTest</a><a class="dropdown-item" href="#">com.restfulbooker.tests.createbooking.CreateBookingTest</a><a class="dropdown-item" href="#">com.restfulbooker.tests.updatebooking.UpdateBookingTest</a><a class="dropdown-item" href="#">com.restfulbooker.tests.ping.PingTest</a><a class="dropdown-item" href="#">com.restfulbooker.tests.auth.AuthTest</a><a class="dropdown-item" href="#">com.restfulbooker.tests.booking.GetBookingTest</a><a class="dropdown-item" href="#">com.restfulbooker.tests.bookingids.GetBookingIdsTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="com.restfulbooker.tests.ping.PingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyServerIsUpUsingPingEndpoint</p>
+            <p class="text-sm">
+              <span>7:32:43 pm</span> / <span>00:00:03:025</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyServerIsUpUsingPingEndpoint</h5>
+<span class='badge badge-success'>04.08.2026 7:32:43 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:32:46 pm</span>
+<span class='badge badge-default'>00:00:03:025</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.ping.PingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:32:43 pm</td>
+        <td>
+          TC_PING_001 - Verify server is reachable through ping endpoint
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:32:46 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="com.restfulbooker.tests.auth.AuthTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyTokenGeneratedWithValidCredentials</p>
+            <p class="text-sm">
+              <span>7:32:46 pm</span> / <span>00:00:02:599</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyTokenGeneratedWithValidCredentials</h5>
+<span class='badge badge-success'>04.08.2026 7:32:46 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:32:48 pm</span>
+<span class='badge badge-default'>00:00:02:599</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.auth.AuthTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:32:46 pm</td>
+        <td>
+          TC_AUTH_001 - Verify auth token is generated for valid credentials
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:32:48 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="com.restfulbooker.tests.auth.AuthTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyBadCredentialsForInvalidUsername</p>
+            <p class="text-sm">
+              <span>7:32:48 pm</span> / <span>00:00:01:823</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyBadCredentialsForInvalidUsername</h5>
+<span class='badge badge-success'>04.08.2026 7:32:48 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:32:50 pm</span>
+<span class='badge badge-default'>00:00:01:823</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.auth.AuthTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:32:48 pm</td>
+        <td>
+          TC_AUTH_002 - Verify bad credentials response for invalid username
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:32:50 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="com.restfulbooker.tests.auth.AuthTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyBadCredentialsForInvalidPassword</p>
+            <p class="text-sm">
+              <span>7:32:50 pm</span> / <span>00:00:01:716</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyBadCredentialsForInvalidPassword</h5>
+<span class='badge badge-success'>04.08.2026 7:32:50 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:32:52 pm</span>
+<span class='badge badge-default'>00:00:01:716</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.auth.AuthTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:32:50 pm</td>
+        <td>
+          TC_AUTH_003 - Verify bad credentials response for invalid password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:32:52 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="com.restfulbooker.tests.auth.AuthTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyBadCredentialsForEmptyUsernameAndPassword</p>
+            <p class="text-sm">
+              <span>7:32:52 pm</span> / <span>00:00:01:865</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyBadCredentialsForEmptyUsernameAndPassword</h5>
+<span class='badge badge-success'>04.08.2026 7:32:52 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:32:54 pm</span>
+<span class='badge badge-default'>00:00:01:865</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.auth.AuthTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:32:52 pm</td>
+        <td>
+          TC_AUTH_004 - Verify bad credentials response for empty username and password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:32:54 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="com.restfulbooker.tests.auth.AuthTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyErrorResponseForMissingRequestBody</p>
+            <p class="text-sm">
+              <span>7:32:54 pm</span> / <span>00:00:01:667</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyErrorResponseForMissingRequestBody</h5>
+<span class='badge badge-success'>04.08.2026 7:32:54 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:32:56 pm</span>
+<span class='badge badge-default'>00:00:01:667</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.auth.AuthTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:32:54 pm</td>
+        <td>
+          TC_AUTH_005 - Verify error response when request body is missing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:32:56 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="com.restfulbooker.tests.bookingids.GetBookingIdsTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyAllBookingIdsWithoutFilters</p>
+            <p class="text-sm">
+              <span>7:32:56 pm</span> / <span>00:00:01:680</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyAllBookingIdsWithoutFilters</h5>
+<span class='badge badge-success'>04.08.2026 7:32:56 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:32:57 pm</span>
+<span class='badge badge-default'>00:00:01:680</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.bookingids.GetBookingIdsTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:32:56 pm</td>
+        <td>
+          TC_GBI_001 - Verify all booking IDs are returned without filters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:32:57 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="com.restfulbooker.tests.bookingids.GetBookingIdsTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyBookingIdsFilteredByFirstname</p>
+            <p class="text-sm">
+              <span>7:32:57 pm</span> / <span>00:00:01:765</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyBookingIdsFilteredByFirstname</h5>
+<span class='badge badge-success'>04.08.2026 7:32:57 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:32:59 pm</span>
+<span class='badge badge-default'>00:00:01:765</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.bookingids.GetBookingIdsTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:32:57 pm</td>
+        <td>
+          TC_GBI_002 - Verify booking IDs are returned for firstname filter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:32:59 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="com.restfulbooker.tests.bookingids.GetBookingIdsTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyBookingIdsFilteredByLastname</p>
+            <p class="text-sm">
+              <span>7:32:59 pm</span> / <span>00:00:01:660</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyBookingIdsFilteredByLastname</h5>
+<span class='badge badge-success'>04.08.2026 7:32:59 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:01 pm</span>
+<span class='badge badge-default'>00:00:01:660</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.bookingids.GetBookingIdsTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:32:59 pm</td>
+        <td>
+          TC_GBI_003 - Verify booking IDs are returned for lastname filter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:01 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="com.restfulbooker.tests.bookingids.GetBookingIdsTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyBookingIdsFilteredByCheckinDate</p>
+            <p class="text-sm">
+              <span>7:33:01 pm</span> / <span>00:00:01:680</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyBookingIdsFilteredByCheckinDate</h5>
+<span class='badge badge-success'>04.08.2026 7:33:01 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:02 pm</span>
+<span class='badge badge-default'>00:00:01:680</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.bookingids.GetBookingIdsTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:01 pm</td>
+        <td>
+          TC_GBI_004 - Verify booking IDs are returned for checkin filter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:02 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="com.restfulbooker.tests.bookingids.GetBookingIdsTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyBookingIdsFilteredByCheckoutDate</p>
+            <p class="text-sm">
+              <span>7:33:02 pm</span> / <span>00:00:01:789</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyBookingIdsFilteredByCheckoutDate</h5>
+<span class='badge badge-success'>04.08.2026 7:33:02 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:04 pm</span>
+<span class='badge badge-default'>00:00:01:789</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.bookingids.GetBookingIdsTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:02 pm</td>
+        <td>
+          TC_GBI_005 - Verify booking IDs are returned for checkout filter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:04 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag="com.restfulbooker.tests.bookingids.GetBookingIdsTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyEmptyResultForNonMatchingFirstname</p>
+            <p class="text-sm">
+              <span>7:33:04 pm</span> / <span>00:00:01:644</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyEmptyResultForNonMatchingFirstname</h5>
+<span class='badge badge-success'>04.08.2026 7:33:04 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:06 pm</span>
+<span class='badge badge-default'>00:00:01:644</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.bookingids.GetBookingIdsTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:04 pm</td>
+        <td>
+          TC_GBI_006 - Verify empty array is returned for non-matching firstname filter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:06 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag="com.restfulbooker.tests.booking.GetBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyBookingByValidId</p>
+            <p class="text-sm">
+              <span>7:33:06 pm</span> / <span>00:00:05:107</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyBookingByValidId</h5>
+<span class='badge badge-success'>04.08.2026 7:33:06 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:11 pm</span>
+<span class='badge badge-default'>00:00:05:107</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.booking.GetBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:06 pm</td>
+        <td>
+          TC_GB_001 - Verify booking details are returned for a valid booking ID
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:11 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag="com.restfulbooker.tests.booking.GetBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyNonExistentBookingIdReturnsNotFound</p>
+            <p class="text-sm">
+              <span>7:33:11 pm</span> / <span>00:00:01:627</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyNonExistentBookingIdReturnsNotFound</h5>
+<span class='badge badge-success'>04.08.2026 7:33:11 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:12 pm</span>
+<span class='badge badge-default'>00:00:01:627</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.booking.GetBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:11 pm</td>
+        <td>
+          TC_GB_002 - Verify non-existent booking ID returns 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:12 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag="com.restfulbooker.tests.booking.GetBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyZeroBookingIdReturnsNotFound</p>
+            <p class="text-sm">
+              <span>7:33:12 pm</span> / <span>00:00:01:607</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyZeroBookingIdReturnsNotFound</h5>
+<span class='badge badge-success'>04.08.2026 7:33:12 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:14 pm</span>
+<span class='badge badge-default'>00:00:01:607</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.booking.GetBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:12 pm</td>
+        <td>
+          TC_GB_003 - Verify booking ID 0 returns 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:14 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag="com.restfulbooker.tests.booking.GetBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyStringBookingIdReturnsNotFound</p>
+            <p class="text-sm">
+              <span>7:33:14 pm</span> / <span>00:00:01:732</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyStringBookingIdReturnsNotFound</h5>
+<span class='badge badge-success'>04.08.2026 7:33:14 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:16 pm</span>
+<span class='badge badge-default'>00:00:01:732</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.booking.GetBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:14 pm</td>
+        <td>
+          TC_GB_004 - Verify string booking ID returns 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:16 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="com.restfulbooker.tests.createbooking.CreateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyCreateBookingWithAllValidFields</p>
+            <p class="text-sm">
+              <span>7:33:16 pm</span> / <span>00:00:01:724</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyCreateBookingWithAllValidFields</h5>
+<span class='badge badge-success'>04.08.2026 7:33:16 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:18 pm</span>
+<span class='badge badge-default'>00:00:01:724</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.createbooking.CreateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:16 pm</td>
+        <td>
+          TC_CB_001 - Verify booking is created with all valid fields
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:18 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="com.restfulbooker.tests.createbooking.CreateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyCreateBookingMissingFirstname</p>
+            <p class="text-sm">
+              <span>7:33:18 pm</span> / <span>00:00:01:833</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyCreateBookingMissingFirstname</h5>
+<span class='badge badge-success'>04.08.2026 7:33:18 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:19 pm</span>
+<span class='badge badge-default'>00:00:01:833</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.createbooking.CreateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:18 pm</td>
+        <td>
+          TC_CB_002 - Verify missing firstname returns server error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:19 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="com.restfulbooker.tests.createbooking.CreateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyCreateBookingMissingTotalprice</p>
+            <p class="text-sm">
+              <span>7:33:19 pm</span> / <span>00:00:01:712</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyCreateBookingMissingTotalprice</h5>
+<span class='badge badge-success'>04.08.2026 7:33:19 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:21 pm</span>
+<span class='badge badge-default'>00:00:01:712</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.createbooking.CreateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:19 pm</td>
+        <td>
+          TC_CB_003 - Verify missing totalprice returns server error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:21 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag="com.restfulbooker.tests.createbooking.CreateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyCreateBookingMissingDepositpaid</p>
+            <p class="text-sm">
+              <span>7:33:21 pm</span> / <span>00:00:01:652</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyCreateBookingMissingDepositpaid</h5>
+<span class='badge badge-success'>04.08.2026 7:33:21 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:23 pm</span>
+<span class='badge badge-default'>00:00:01:652</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.createbooking.CreateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:21 pm</td>
+        <td>
+          TC_CB_004 - Verify missing depositpaid returns server error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:23 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag="com.restfulbooker.tests.createbooking.CreateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyCreateBookingMissingBookingdates</p>
+            <p class="text-sm">
+              <span>7:33:23 pm</span> / <span>00:00:01:633</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyCreateBookingMissingBookingdates</h5>
+<span class='badge badge-success'>04.08.2026 7:33:23 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:24 pm</span>
+<span class='badge badge-default'>00:00:01:633</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.createbooking.CreateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:23 pm</td>
+        <td>
+          TC_CB_005 - Verify missing bookingdates returns server error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:24 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag="com.restfulbooker.tests.createbooking.CreateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyCreateBookingWithInvalidDateFormat</p>
+            <p class="text-sm">
+              <span>7:33:24 pm</span> / <span>00:00:01:677</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyCreateBookingWithInvalidDateFormat</h5>
+<span class='badge badge-success'>04.08.2026 7:33:24 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:26 pm</span>
+<span class='badge badge-default'>00:00:01:677</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.createbooking.CreateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:24 pm</td>
+        <td>
+          TC_CB_006 - Verify actual behavior for invalid date format during booking creation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:26 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag="com.restfulbooker.tests.createbooking.CreateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyCreateBookingResponseSchema</p>
+            <p class="text-sm">
+              <span>7:33:26 pm</span> / <span>00:00:01:656</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyCreateBookingResponseSchema</h5>
+<span class='badge badge-success'>04.08.2026 7:33:26 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:28 pm</span>
+<span class='badge badge-default'>00:00:01:656</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.createbooking.CreateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:26 pm</td>
+        <td>
+          TC_CB_007 - Verify create booking response schema
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:28 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag="com.restfulbooker.tests.updatebooking.UpdateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyFullUpdateWithValidAuthToken</p>
+            <p class="text-sm">
+              <span>7:33:28 pm</span> / <span>00:00:06:711</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyFullUpdateWithValidAuthToken</h5>
+<span class='badge badge-success'>04.08.2026 7:33:28 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:34 pm</span>
+<span class='badge badge-default'>00:00:06:711</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.updatebooking.UpdateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:28 pm</td>
+        <td>
+          TC_UB_001 - Verify full update succeeds with valid auth token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:34 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag="com.restfulbooker.tests.updatebooking.UpdateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyFullUpdateWithoutAuthToken</p>
+            <p class="text-sm">
+              <span>7:33:34 pm</span> / <span>00:00:06:614</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyFullUpdateWithoutAuthToken</h5>
+<span class='badge badge-success'>04.08.2026 7:33:34 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:41 pm</span>
+<span class='badge badge-default'>00:00:06:614</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.updatebooking.UpdateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:34 pm</td>
+        <td>
+          TC_UB_002 - Verify full update fails without auth token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:41 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag="com.restfulbooker.tests.updatebooking.UpdateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyFullUpdateWithInvalidToken</p>
+            <p class="text-sm">
+              <span>7:33:41 pm</span> / <span>00:00:08:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyFullUpdateWithInvalidToken</h5>
+<span class='badge badge-success'>04.08.2026 7:33:41 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:49 pm</span>
+<span class='badge badge-default'>00:00:08:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.updatebooking.UpdateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:41 pm</td>
+        <td>
+          TC_UB_003 - Verify full update fails with invalid token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:49 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag="com.restfulbooker.tests.updatebooking.UpdateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyUpdateNonExistentBookingId</p>
+            <p class="text-sm">
+              <span>7:33:49 pm</span> / <span>00:00:03:244</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyUpdateNonExistentBookingId</h5>
+<span class='badge badge-success'>04.08.2026 7:33:49 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:52 pm</span>
+<span class='badge badge-default'>00:00:03:244</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.updatebooking.UpdateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:49 pm</td>
+        <td>
+          TC_UB_004 - Verify update on non-existent booking ID returns 405
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:52 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag="com.restfulbooker.tests.updatebooking.UpdateBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyUpdateWithMissingRequiredFields</p>
+            <p class="text-sm">
+              <span>7:33:52 pm</span> / <span>00:00:04:873</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyUpdateWithMissingRequiredFields</h5>
+<span class='badge badge-success'>04.08.2026 7:33:52 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:33:57 pm</span>
+<span class='badge badge-default'>00:00:04:873</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.updatebooking.UpdateBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:52 pm</td>
+        <td>
+          TC_UB_005 - Verify update with missing required fields returns 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:33:57 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag="com.restfulbooker.tests.patchbooking.PatchBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyPartialUpdateFirstnameOnly</p>
+            <p class="text-sm">
+              <span>7:33:57 pm</span> / <span>00:00:08:416</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyPartialUpdateFirstnameOnly</h5>
+<span class='badge badge-success'>04.08.2026 7:33:57 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:34:06 pm</span>
+<span class='badge badge-default'>00:00:08:416</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.patchbooking.PatchBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:33:57 pm</td>
+        <td>
+          TC_PU_001 - Verify partial update of firstname only
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:34:06 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag="com.restfulbooker.tests.patchbooking.PatchBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyPartialUpdateTotalpriceOnly</p>
+            <p class="text-sm">
+              <span>7:34:06 pm</span> / <span>00:00:08:179</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyPartialUpdateTotalpriceOnly</h5>
+<span class='badge badge-success'>04.08.2026 7:34:06 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:34:14 pm</span>
+<span class='badge badge-default'>00:00:08:179</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.patchbooking.PatchBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:34:06 pm</td>
+        <td>
+          TC_PU_002 - Verify partial update of totalprice only
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:34:14 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag="com.restfulbooker.tests.patchbooking.PatchBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyPartialUpdateWithoutAuthToken</p>
+            <p class="text-sm">
+              <span>7:34:14 pm</span> / <span>00:00:03:328</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyPartialUpdateWithoutAuthToken</h5>
+<span class='badge badge-success'>04.08.2026 7:34:14 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:34:17 pm</span>
+<span class='badge badge-default'>00:00:03:328</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.patchbooking.PatchBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:34:14 pm</td>
+        <td>
+          TC_PU_003 - Verify partial update fails without auth token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:34:17 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag="com.restfulbooker.tests.patchbooking.PatchBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyPartialUpdateNonExistentBookingId</p>
+            <p class="text-sm">
+              <span>7:34:17 pm</span> / <span>00:00:04:596</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyPartialUpdateNonExistentBookingId</h5>
+<span class='badge badge-success'>04.08.2026 7:34:17 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:34:22 pm</span>
+<span class='badge badge-default'>00:00:04:596</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.patchbooking.PatchBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:34:17 pm</td>
+        <td>
+          TC_PU_004 - Verify partial update on non-existent booking ID returns 405
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:34:22 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag="com.restfulbooker.tests.deletebooking.DeleteBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyDeleteBookingWithValidAuthToken</p>
+            <p class="text-sm">
+              <span>7:34:22 pm</span> / <span>00:00:06:724</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyDeleteBookingWithValidAuthToken</h5>
+<span class='badge badge-success'>04.08.2026 7:34:22 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:34:28 pm</span>
+<span class='badge badge-default'>00:00:06:724</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.deletebooking.DeleteBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:34:22 pm</td>
+        <td>
+          TC_DEL_001 - Verify booking is deleted with valid auth token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:34:28 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag="com.restfulbooker.tests.deletebooking.DeleteBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyDeleteBookingWithoutAuthToken</p>
+            <p class="text-sm">
+              <span>7:34:28 pm</span> / <span>00:00:05:309</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyDeleteBookingWithoutAuthToken</h5>
+<span class='badge badge-success'>04.08.2026 7:34:28 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:34:34 pm</span>
+<span class='badge badge-default'>00:00:05:309</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.deletebooking.DeleteBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:34:28 pm</td>
+        <td>
+          TC_DEL_002 - Verify delete fails without auth token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:34:34 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag="com.restfulbooker.tests.deletebooking.DeleteBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyDeleteBookingWithInvalidAuthToken</p>
+            <p class="text-sm">
+              <span>7:34:34 pm</span> / <span>00:00:03:427</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyDeleteBookingWithInvalidAuthToken</h5>
+<span class='badge badge-success'>04.08.2026 7:34:34 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:34:37 pm</span>
+<span class='badge badge-default'>00:00:03:427</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.deletebooking.DeleteBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:34:34 pm</td>
+        <td>
+          TC_DEL_003 - Verify delete fails with invalid auth token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:34:37 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag="com.restfulbooker.tests.deletebooking.DeleteBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyDeleteNonExistentBookingId</p>
+            <p class="text-sm">
+              <span>7:34:37 pm</span> / <span>00:00:03:269</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyDeleteNonExistentBookingId</h5>
+<span class='badge badge-success'>04.08.2026 7:34:37 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:34:40 pm</span>
+<span class='badge badge-default'>00:00:03:269</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.deletebooking.DeleteBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:34:37 pm</td>
+        <td>
+          TC_DEL_004 - Verify delete on non-existent booking ID returns 405
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:34:40 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag="com.restfulbooker.tests.deletebooking.DeleteBookingTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyDeletedBookingReturnsNotFoundOnGet</p>
+            <p class="text-sm">
+              <span>7:34:40 pm</span> / <span>00:00:06:756</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyDeletedBookingReturnsNotFoundOnGet</h5>
+<span class='badge badge-success'>04.08.2026 7:34:40 pm</span>
+<span class='badge badge-danger'>04.08.2026 7:34:47 pm</span>
+<span class='badge badge-default'>00:00:06:756</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">com.restfulbooker.tests.deletebooking.DeleteBookingTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:34:40 pm</td>
+        <td>
+          TC_DEL_005 - Verify deleted booking returns 404 on GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:34:47 pm</td>
+        <td>
+          Test passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">8</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">com.restfulbooker.tests.patchbooking.PatchBookingTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>com.restfulbooker.tests.patchbooking.PatchBookingTest</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>verifyPartialUpdateFirstnameOnly</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:34:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>verifyPartialUpdateTotalpriceOnly</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:34:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>verifyPartialUpdateWithoutAuthToken</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:34:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>verifyPartialUpdateNonExistentBookingId</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">com.restfulbooker.tests.deletebooking.DeleteBookingTest</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>com.restfulbooker.tests.deletebooking.DeleteBookingTest</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:34:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>verifyDeleteBookingWithValidAuthToken</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:34:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='34' id='34'>verifyDeleteBookingWithoutAuthToken</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:34:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>verifyDeleteBookingWithInvalidAuthToken</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:34:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='36'>verifyDeleteNonExistentBookingId</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:34:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='37' id='37'>verifyDeletedBookingReturnsNotFoundOnGet</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">com.restfulbooker.tests.createbooking.CreateBookingTest</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>com.restfulbooker.tests.createbooking.CreateBookingTest</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>verifyCreateBookingWithAllValidFields</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>verifyCreateBookingMissingFirstname</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>verifyCreateBookingMissingTotalprice</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>verifyCreateBookingMissingDepositpaid</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>verifyCreateBookingMissingBookingdates</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>verifyCreateBookingWithInvalidDateFormat</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>verifyCreateBookingResponseSchema</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">com.restfulbooker.tests.updatebooking.UpdateBookingTest</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>com.restfulbooker.tests.updatebooking.UpdateBookingTest</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>verifyFullUpdateWithValidAuthToken</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>verifyFullUpdateWithoutAuthToken</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>verifyFullUpdateWithInvalidToken</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>verifyUpdateNonExistentBookingId</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>verifyUpdateWithMissingRequiredFields</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">com.restfulbooker.tests.ping.PingTest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>com.restfulbooker.tests.ping.PingTest</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:32:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>verifyServerIsUpUsingPingEndpoint</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">com.restfulbooker.tests.auth.AuthTest</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>com.restfulbooker.tests.auth.AuthTest</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:32:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>verifyTokenGeneratedWithValidCredentials</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:32:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>verifyBadCredentialsForInvalidUsername</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:32:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>verifyBadCredentialsForInvalidPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:32:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>verifyBadCredentialsForEmptyUsernameAndPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:32:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>verifyErrorResponseForMissingRequestBody</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">com.restfulbooker.tests.booking.GetBookingTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>com.restfulbooker.tests.booking.GetBookingTest</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>verifyBookingByValidId</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>verifyNonExistentBookingIdReturnsNotFound</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>verifyZeroBookingIdReturnsNotFound</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>verifyStringBookingIdReturnsNotFound</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">com.restfulbooker.tests.bookingids.GetBookingIdsTest</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>com.restfulbooker.tests.bookingids.GetBookingIdsTest</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:32:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>verifyAllBookingIdsWithoutFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:32:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>verifyBookingIdsFilteredByFirstname</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:32:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>verifyBookingIdsFilteredByLastname</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>verifyBookingIdsFilteredByCheckinDate</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>verifyBookingIdsFilteredByCheckoutDate</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:33:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>verifyEmptyResultForNonMatchingFirstname</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 8, 2026 07:32:42 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 8, 2026 07:34:47 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>37</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>37</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'><b>37</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>37</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"verifyServerIsUpUsingPingEndpoint":3.025,"verifyTokenGeneratedWithValidCredentials":2.599,"verifyBadCredentialsForInvalidUsername":1.823,"verifyBadCredentialsForInvalidPassword":1.716,"verifyBadCredentialsForEmptyUsernameAndPassword":1.865,"verifyErrorResponseForMissingRequestBody":1.667,"verifyAllBookingIdsWithoutFilters":1.68,"verifyBookingIdsFilteredByFirstname":1.765,"verifyBookingIdsFilteredByLastname":1.66,"verifyBookingIdsFilteredByCheckinDate":1.68,"verifyBookingIdsFilteredByCheckoutDate":1.789,"verifyEmptyResultForNonMatchingFirstname":1.644,"verifyBookingByValidId":5.107,"verifyNonExistentBookingIdReturnsNotFound":1.627,"verifyZeroBookingIdReturnsNotFound":1.607,"verifyStringBookingIdReturnsNotFound":1.732,"verifyCreateBookingWithAllValidFields":1.724,"verifyCreateBookingMissingFirstname":1.833,"verifyCreateBookingMissingTotalprice":1.712,"verifyCreateBookingMissingDepositpaid":1.652,"verifyCreateBookingMissingBookingdates":1.633,"verifyCreateBookingWithInvalidDateFormat":1.677,"verifyCreateBookingResponseSchema":1.656,"verifyFullUpdateWithValidAuthToken":6.711,"verifyFullUpdateWithoutAuthToken":6.614,"verifyFullUpdateWithInvalidToken":8,"verifyUpdateNonExistentBookingId":3.244,"verifyUpdateWithMissingRequiredFields":4.873,"verifyPartialUpdateFirstnameOnly":8.416,"verifyPartialUpdateTotalpriceOnly":8.179,"verifyPartialUpdateWithoutAuthToken":3.328,"verifyPartialUpdateNonExistentBookingId":4.596,"verifyDeleteBookingWithValidAuthToken":6.724,"verifyDeleteBookingWithoutAuthToken":5.309,"verifyDeleteBookingWithInvalidAuthToken":3.427,"verifyDeleteNonExistentBookingId":3.269,"verifyDeletedBookingReturnsNotFoundOnGet":6.756
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>com.restfulbooker.tests.patchbooking.PatchBookingTest</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>com.restfulbooker.tests.deletebooking.DeleteBookingTest</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>com.restfulbooker.tests.createbooking.CreateBookingTest</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>com.restfulbooker.tests.updatebooking.UpdateBookingTest</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>com.restfulbooker.tests.ping.PingTest</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>com.restfulbooker.tests.auth.AuthTest</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>com.restfulbooker.tests.booking.GetBookingTest</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>com.restfulbooker.tests.bookingids.GetBookingIdsTest</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td>API Automation Portfolio</td>
+</tr>
+<tr>
+<td>Framework</td>
+<td>RestAssured + Java + TestNG + Maven</td>
+</tr>
+<tr>
+<td>Base URL</td>
+<td>https://restful-booker.herokuapp.com</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>17.0.12</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 37,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 37,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 37
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

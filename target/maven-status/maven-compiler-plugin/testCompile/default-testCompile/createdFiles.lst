@@ -1,0 +1,13 @@
+com\restfulbooker\tests\bookingids\GetBookingIdsTest.class
+com\restfulbooker\tests\updatebooking\UpdateBookingTest.class
+com\restfulbooker\listeners\ExtentReportListener.class
+com\restfulbooker\base\ApiConfig.class
+com\restfulbooker\tests\booking\GetBookingTest.class
+com\restfulbooker\tests\auth\AuthTest.class
+com\restfulbooker\tests\patchbooking\PatchBookingTest.class
+com\restfulbooker\models\AuthRequest.class
+com\restfulbooker\reports\ExtentReportManager.class
+com\restfulbooker\tests\deletebooking\DeleteBookingTest.class
+com\restfulbooker\tests\ping\PingTest.class
+com\restfulbooker\tests\createbooking\CreateBookingTest.class
+com\restfulbooker\base\BaseApiTest.class
